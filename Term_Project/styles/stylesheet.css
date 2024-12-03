@@ -1,0 +1,697 @@
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-image: url('../images/slide.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25vw;
+    width: 80%;
+    margin: 0 auto !important;
+    border: 0.1875em solid #931420;
+    background-color: #fffded;
+	opacity: 0.9;
+}
+
+/* the styles for the nav menu */
+
+a:focus, a:hover {
+	font-style: italic;
+}
+
+nav a:focus, a:hover {
+	color: yellow;
+}
+
+nav ul li {
+	display: inline-block;
+	float: left;
+	width: 20%;
+	background-color: #931420;
+	text-align: center;
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	line-height: 2em;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+nav ul {
+	list-style: none;
+	position: relative;
+}
+
+nav ul ul {
+	display: none;
+	position: absolute;
+}
+
+nav ul ul li {
+	float: none;
+	display: block;
+	width: 25%;
+	position: relative;
+	z-index: 99;
+}
+
+nav ul ul ul li {
+	float: right;
+}
+
+nav ul li:hover > ul {
+	display: block;
+	width: 100%;
+}
+
+nav > ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+nav ul {
+	margin-top: -0.5em;
+	padding: 0;
+}
+
+nav button {
+	display: none;
+	border: none;
+}
+
+mark {
+	background-color: #2D2D2D;
+	color: white;
+	border-radius: 0.375em;
+	padding: 0.5em;
+}
+
+/* the styles for the header */
+
+header {
+	padding: 1.5em 0 2em 0;
+	position: sticky; 
+	top: 0;
+	z-index:1;
+	border-bottom: 0.1875em solid #931420;
+	background-image: url('../images/inside_yurta.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% 60%;
+	font-family: "Times New Roman", Times, serif;
+	text-shadow: 0.2em 0.2em 8px #800;
+}
+
+header h2 {
+	font-size: 250%;
+	color: white;
+	margin-left: 7em;
+	
+}
+
+header h3 {
+	font-size: 220%;
+	font-style: italic;
+	color: white;
+	margin-left: 8em;
+}
+
+header img {
+	width: 20em;
+	height: 8.6em;
+	float: left;
+	background-color: white;
+	opacity: 0.9;
+	padding: 0.8em 0.5em 0.5em 0.5em;
+	margin-top: -1.5em;
+	margin-right: 1em;
+}
+
+/* the styles for the main content */
+main {
+	display: flex;
+	margin-left: -1em;
+	z-index:0;
+}
+
+/* the styles for the section */
+section {
+	padding: 0 1.25em 1.25em 1.8em;
+	line-height: 2em;
+}
+
+section.map img {
+	width: 100%;
+}
+
+section.index img {
+	width: 100%;
+}
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 0.3125em;
+    margin: auto;
+}
+
+.map figure {
+	width:494px;
+	height:290px;
+	margin-bottom: 1em;
+	margin-left: 0;
+}
+
+figcaption {
+    background-color: #b58774;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 0.1875em;
+    text-align: center;
+}
+
+.image1 {
+	display: block;
+	background-image:url("../images/flag.jpg");
+	background-size: cover;
+	width: 100%;
+	height: 21em;
+}
+
+.image1:hover {
+	background-image:url("../images/herb.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.imagemap {
+	display: block;
+}
+
+section h1 {
+	color: #800000;
+	font-size: 250%;
+	padding-top: 2em;
+	padding-bottom: 1.5em;
+	margin: 0;
+}
+
+section h2 {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	border-top: 0.1875em solid #931420;
+	border-bottom: 0.1875em solid #931420;
+}
+
+section p {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+}
+
+section div.googlemap {
+	border: 0.1875em solid #931420;
+	width: 37em;
+	height: 25em;
+}
+
+section h3 {
+	padding-top: 2em;
+	font-size: 190%;
+}
+
+.location {
+	font-weight: bold;
+	font-size: 150%;
+	margin-bottom: -4em;
+}
+
+.map {
+	width: 60%;
+}
+
+.googlemap iframe {
+	width: 37em;
+	height: 25em;
+}
+
+.history {
+	text-align: center;
+}
+
+.his_paragraph {
+	border-top: 0.1875em solid #931420;
+	border-bottom: 0.1875em solid #931420;
+}
+
+div.culture_images img {
+	display: block;
+	width: 60%;
+	margin-left: 6em;
+	margin-bottom: 0.5em;
+}
+
+section ul {
+	padding-top: 1em;
+	list-style: none;
+}
+
+section ul li {
+	font-size: 200%;
+}
+
+section ul li img {
+	width: 60%;
+}
+
+section ul li img:hover {
+	transform: scale(1.1);
+}
+
+/* the styles for the form */
+
+form h2 {
+	border: none;
+}
+
+.btn-toolbar button {
+	width: 4em;
+	float: left;
+	margin: 0.5em 0.1em;
+}
+
+.btn-toolbar button:active, .btn-toolbar button:focus {
+	background-color: #a9a9a9;
+	border-width: 1px;
+}
+
+.bad {
+	float: left;
+	margin: 0 1em;
+}
+
+.range {
+	float: left;
+}
+
+.excellent {
+	float: left;
+	margin: 0 1em;
+}
+
+.buttons button {
+	border-color: #D3D3D3 
+			#4C4E52
+			#4C4E52
+			#D3D3D3;
+	border-width: 2px;
+	font-size: 1.2em;
+	box-shadow: 6px 6px 1px rgba(139, 69, 19, .25);
+	display: inline-block;
+	width: 50%;
+}
+
+.buttons button:hover, .buttons button:focus {
+	background-color: #a9a9a9;
+}
+
+.required:after {
+    content:" *";
+    color: FireBrick;
+	display: inline;
+	font-size: 150%;
+ }
+ 
+ .end:before {
+    content:" *";
+    color: FireBrick;
+	display: inline;
+	font-size: 150%;
+ }
+
+dt {
+	font-weight: bold;
+}
+
+
+h1 {
+	color: brown;
+	font-size: 200%;
+	margin: 0.2em 0;
+}
+
+h2 {
+	font-size: 115%;
+	margin: 0.2em 0;
+}
+
+label {
+	color: olive;
+	padding: .2em 0;
+	display: inline-block;
+}
+
+input {
+	width: 15em;
+	border: 1px solid brown;
+}
+
+input:hover, input:focus, input:active, input:visited {
+	border: 2px solid brown;
+}
+
+div {
+	white-space: nowrap;
+	margin: 0.5em 0;
+}
+
+span {
+	display: inline-block;
+	width: 155px;
+	font-weight: bold;
+}
+
+.left {
+	color: black;
+	float: left;
+	width: 250px;
+}
+
+.right {
+	padding: 0.6em 0;
+}
+
+.right label {
+	color: black;
+}
+
+.left input {
+	width: 1em;
+	cursor: pointer;
+	background-color: gray;
+}
+
+.right input {
+	width: 1em;
+	cursor: pointer;
+
+}
+
+textarea {
+	width: 100%;
+    height: 6em;
+}
+
+.msg {
+	clear: left;
+}
+
+/* the styles for the aside */
+
+
+.asidetwo {
+	padding: 0 1em 1.25em 2em;
+}
+
+
+.asidetwo h2 {
+	width: 60%;
+	color: #800000;
+	font-size: 150%;
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+	padding: .6em 0 0.7em 0.1em;
+}
+
+.asidetwo ul li h3 {
+	font-size: 100%;
+	padding-bottom: .25em;
+	margin-left: -3em !important;
+}
+
+.asidetwo img {
+	padding-bottom: 1em;
+}
+
+#nav_list ul a {
+	text-decoration: none;
+}
+
+#nav_list ul a:hover, a:focus {
+	text-decoration: underline;
+}
+
+#nav_list ul {
+	list-style: none;
+	margin-bottom: 2em;
+}
+
+#nav_list ul li {
+	width: 10%;
+	height: 1em;
+	margin-bottom: .5em;
+	border: 0.1875em solid black;
+	border-radius: 0.625em;
+	box-shadow: 0.125em 0.1875em #800000;
+	margin-bottom: 0.5em;
+	padding: 5em 5em;
+	text-align: center;
+}
+
+#nav_list ul li {
+	position: relative;
+}
+
+#nav_list ul li a.odd {
+	color: #800000;
+}
+
+#nav_list ul li a {
+	color: white;
+	font-size: 150%;
+	font-weight: lighter;
+}
+
+#nukus {
+	background-image: url('../images/nukus.jpeg');
+}
+
+#muynak {
+	background-image: url('../images/muynak.jpg');
+}
+
+#kun {
+	background-image: url('../images/kungirat.jpg');
+}
+
+#kho {
+	background-image: url('../images/khodjeli.jpg');
+}
+
+.ads {
+	width: 7em; 
+	height: 70%; 
+	background-color: gray; 
+	color: white; 
+	font-size: 1.5em; 
+	text-align: center;
+	margin-top: 2em; 
+	padding-top: 2em;
+}
+
+.adtext {
+	margin-bottom: 25em;
+}
+
+.asidetwo li {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #000000;
+  }
+
+.asidetwo li {
+    -webkit-filter: brightness(100%);
+}
+
+.asidetwo li:hover {
+    -webkit-filter: brightness(80%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+/* the styles for the table */
+
+
+table.part3 {
+	margin-bottom: 3em;
+	width: 100%;
+}
+
+table.part3 a {
+	text-decoration: none;
+	color: black;
+}
+
+table.part3 tr:hover a {
+	color: white;
+}
+		
+table.part3 td, table.part3 th, table.part3 {
+	border: 0.05em solid black;
+	border-collapse: collapse;
+	padding: 0.1em 0.5em;
+}
+
+table.part3 thead th {
+	text-align: left;
+	background-color: #e8f4f8;
+}
+
+table.part3 tbody tr td:last-child {
+	text-align: right;
+}
+
+table.part3 tbody th {
+	text-align: left;
+	background-color: white;
+}
+
+table.part3 tfoot {
+	text-align: right;
+}
+
+
+
+/* the styles for the footer */
+footer {
+	background-color: #931420;
+	clear: both;
+
+}
+footer p {
+	text-align: center;
+	color: white;
+	padding: 1em 0;
+}
+
+/* the styles for the media query */
+
+@media screen and (max-width: 700px) {
+			body {
+				font-size: 1.8vw;
+			}
+			
+			main {
+				display: flex;
+				flex-direction: column;
+			}
+			
+			section {
+				width: 90%;
+				text-align: center;
+			}
+			
+			.map p {
+				width: 150%;
+			}
+			
+			aside {
+				width: 90%;
+			}
+			
+			#nav_list {
+				margin: 0 6em;
+			}
+			
+			aside ul {
+				margin: 5em;
+			}
+			
+			header img {
+				width: 20em;
+				height: 8.5em;
+			}
+			
+			header h2, header h3 {
+				margin-left: 1em;
+			}
+			
+			nav button {
+				display: inline-block;
+				background-color: #931420;
+				width: 100%;
+				text-align: right;
+				position: relative;
+			}
+		
+			.dropbtn {
+				display: inline-block;
+				width: 78vw;
+				background-color: #931420;
+				color: white;
+				padding: 1em;
+				font-size: 1em;
+				border: none;
+				cursor: pointer;
+				text-align: right;
+				margin-top: -0.5em;
+			}
+
+			.dropdown {
+				position: relative;
+				display: inline-block;
+			}
+
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: #931420;
+				width: 6em;
+				z-index: 1;
+				right: 9%;
+			}
+
+			.dropdown-content li {
+				color: white;
+				padding: 0.75em 1em;
+				text-decoration: none;
+				text-align: center;
+				display: block;
+				width: 100%;
+			}
+			
+			.dropdown-content li ul {
+				top: 0;
+				left: -125%;
+			}
+			
+			.dropdown-content li ul ul {
+				top: 0;
+				left: -100%;
+			}
+
+			.dropdown-content a:hover {color: yellow;}
+
+			.dropdown:hover .dropdown-content {
+				display: block;
+			}
+			
+			.map figure {
+				margin-left: 0;
+			}
+	
+		}

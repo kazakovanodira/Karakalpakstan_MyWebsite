@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>MAP</title>
+	<link rel="stylesheet" href="../styles/stylesheet.css">
+	<link rel="stylesheet" href="../styles/normalize.css">
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<style>
+		map {
+			margin-left: 9em !important;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<img src="../images/logo.png" alt="Karakalpakstan logo" height="80">
+		<h2>Karakalpakstan</h2>
+		<h3><span class="shadow">Oasis</span> in Central Asia</h3>
+	</header>
+	
+	<nav>
+		<div class="dropdown">
+		<button class="dropbtn"><mark>MENU &#8801;</mark></button>
+		<ul class="dropdown-content">
+			<li><a href="index.html">Home</a>
+				<ul>
+					<li><a href="#">Sources</a></li>
+					<li><a href="#">Travel</a></li>
+					<li><a href="#">Connect</a></li>
+					<li><a href="#">More Information</a></li>
+				</ul>
+			</li>
+			<li><a href="map.html" class="disabled">Map</a>
+				<ul>
+					<li><a href="#">Location</a></li>
+					<li><a href="#">Scenery</a></li>
+					<li><a href="#">Structure</a></li>
+					<li><a href="#">Visit</a>
+						<ul>
+							<li><a href="#">Date</a>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="history.html" >History</a>
+				<ul>
+					<li><a href="#">Formation</a></li>
+					<li><a href="#">Development</a></li>
+					<li><a href="#">Events</a></li>
+					<li><a href="#">Recent</a></li>
+				</ul>
+			</li>
+			<li><a href="cuisine.html" >Cuisine</a>
+				<ul>
+					<li><a href="#">Cafes</a></li>
+					<li><a href="#">Famous</a></li>
+					<li><a href="#">Reviews</a></li>
+					<li><a href="#">Learn to cook</a></li>
+				</ul>
+			</li>
+			<li><a href="culture.html" >Culture</a></li>
+		</ul>
+		</div>
+	</nav>
+	
+	<main>
+	
+		<aside class="left asidetwo">
+			<h2>Big Cities of Karakalpakstan</h2>
+			<div id="nav_list">
+				<ul>
+					<li id="nukus"><h3><a href="#">NUKUS</a></h3></li>
+					<li id="muynak"><h3><a href="#">MUYNAK</a></h3></li>
+					<li id="kun"><h3><a href="#">KUNGIROT</a></h3></li>
+					<li id="kho"><h3><a href="#">KHOJAYLI</a></h3></li>
+				</ul>
+			</div>
+		</aside>
+		
+		<section class="map">
+			<h1><i>Where is it located?</i></h1>
+			<div class="googlemap">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5955338.998550015!2d54.69257979383589!3d43.21199843512277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41e9b68886e89265%3A0xc7f1caf0e51ae55a!2sRepublic%20of%20Karakalpakstan%2C%20Uzbekistan!5e0!3m2!1sen!2sus!4v1669788281556!5m2!1sen!2sus" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			<p class="location">
+				Karakalpakstan is a region of Uzbekistan. It is located in Central Asia.
+			</p>
+			<br>
+			<h3>Nature: Desert</h3>
+			<p>
+				The nature of Karakalpakstan is marvelous and diverse. 
+				It is characterized by magnificent landscapes, rich natural 
+				resources and abundant flora and fauna. More than 400 animal 
+				species and thousands of different higher plants exist on 
+				the vast and beautiful territory of Karakalpakstan.
+			</p>
+			
+			<p style="font-weight:bold;text-align:center;">
+				Press on the grass or the sand on the image below to learn more about them!
+			</p>
+			<figure>
+				<img src="../images/nature.jpg" alt="Nature" usemap="#desert" style="width:494px;height:290px;" class="imagemap" >
+				<figcaption>Beautiful scenery in desert</figcaption>
+			</figure>
+			<map name="desert">
+				  <area shape="rect" coords="0,200,240,250" alt="Grass" href="https://www.britannica.com/plant/grass" target="_blank">
+				  <area shape="rect" coords="300,200,494,290" alt="Sand" href="https://www.britannica.com/science/sand"  target="_blank">
+				</map>
+		</section>
+	
+	</main>
+	
+	<footer>
+		<p>&copy; Nodira Kazakova, 2022</p>
+	</footer>
+	
+</body>
+</html>

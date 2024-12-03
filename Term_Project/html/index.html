@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Karakalpakstan</title>
+	<link rel="stylesheet" href="../styles/stylesheet.css">
+	<link rel="stylesheet" href="../styles/normalize.css">
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<style>
+	
+		.asideone {
+			margin-left: 2em;
+			padding-top: 4em;
+			padding-right: 1em;
+			border-right: 0.1875em solid #931420;
+		}
+		
+		.asideone ul {
+			margin-left: 2em;
+			list-style: none;
+			
+		}
+		
+		.asideone h2 {
+			width: 100%;
+			color: #800000;
+			font-size: 200%;
+			font-family: "Times New Roman", Times, serif;
+			text-align: center;
+			padding: .6em 0 0.7em 0.1em;
+		}
+		
+		.asideone ul li {
+			background-color:  #fffded;
+			margin-bottom: 1em;
+		}
+		
+		.asideone ul li a {
+			text-decoration: none;
+		}
+		
+		.asideone a:hover, .asideone a:focus {
+			background-color:  #fffded;
+			font-style: italic;
+			color: yellow;
+		}
+		
+		@media screen and (max-width: 700px) {
+			.asideone {
+				border-right: none;
+				text-align: center;
+				font-size: 2em;
+				padding-top: 1em;
+			}
+			
+			.asideone h2 {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.asideone ul {
+				margin-top: 1em;
+				padding: 0;
+			}
+			
+			.ads {
+				margin-top: -3em;
+				margin-bottom: -1em;
+				margin-left: 2em;
+				padding: 0;
+				height: 2em;
+				
+			}
+			
+			.adtext {
+				display: inline-block;
+				font-size: 0.3em;
+			}
+			
+		}
+		
+	</style>
+</head>
+
+<body>
+	<header>
+		<img src="../images/logo.png" alt="Karakalpakstan logo" height="80">
+		<h2>Karakalpakstan</h2>
+		<h3>Oasis in Central Asia</h3>
+	</header>
+	
+	<nav>
+		<div class="dropdown">
+		<button class="dropbtn"><mark>MENU &#8801;</mark></button>
+		<ul class="dropdown-content">
+			<li><a href="index.html" class="disabled">Home</a>
+				<ul>
+					<li><a href="#">Sources</a></li>
+					<li><a href="#">Travel</a></li>
+					<li><a href="#">Connect</a></li>
+					<li><a href="#">More Information</a></li>
+				</ul>
+			</li>
+			<li><a href="map.html" >Map</a>
+				<ul>
+					<li><a href="#">Location</a></li>
+					<li><a href="#">Scenery</a></li>
+					<li><a href="#">Structure</a></li>
+					<li><a href="#">Visit</a>
+						<ul>
+							<li><a href="#">Date</a>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="history.html" >History</a>
+				<ul>
+					<li><a href="#">Formation</a></li>
+					<li><a href="#">Development</a></li>
+					<li><a href="#">Events</a></li>
+					<li><a href="#">Recent</a></li>
+				</ul>
+			</li>
+			<li><a href="cuisine.html" >Cuisine</a>
+				<ul>
+					<li><a href="#">Cafes</a></li>
+					<li><a href="#">Famous</a></li>
+					<li><a href="#">Reviews</a></li>
+					<li><a href="#">Learn to cook</a></li>
+				</ul>
+			</li>
+			<li><a href="culture.html" >Culture</a></li>
+		</ul>
+		</div>
+	</nav>
+	
+	<main>
+	
+		<aside class="asideone">
+			<h2>Similar places</h2>
+			<div>
+				<ul>
+					<li><h3><a href="#">Samarkand</a></h3></li>
+					<li><h3><a href="#">Khorezm</a></h3></li>
+					<li><h3><a href="#">Bukhara</a></h3></li>
+					<li><h3><a href="#">Namangan</a></h3></li>
+				</ul>
+			</div>
+			<div class="ads">
+				<div class="adtext">A perfect<br>place for<br>your ads!</div>
+				<div class="adtext">A perfect<br>place for<br>your ads!</div>
+				<div class="adtext">A perfect<br>place for<br>your ads!</div>
+			</div>
+			
+		</aside>
+	
+		<section class="index">
+			<h1>Discover Karakalpakstan!</h1>
+			<h2><i>Karakalpakstan is a mysterious region of the East, where the history of cities gathered in legends, 
+			where the sun shines all year round and this reflects the unique nature and beautiful hearts of people.</i></h2>
+			<p>
+				Welcome to the place of magnificent architecture and ancient traditions preserved a unique heritage. 
+				Everyone who comes to this blessed land is welcome here! If you have visited Karakalpakstan once, be sure, 
+				you will want to return back here again.
+			</p>
+			
+			<figure>
+				<p class="image1"></p>
+				<figcaption>Karakalpakstan symbols</figcaption>
+			</figure>
+			
+			<h1>Please complete our survey</h1>
+			<form name="myform" action="form_components.html" method="get">
+				<div>
+					<h2> Contact Information</h2>
+						<label class="required"><span>E-mail address(m):</span><input type="email" name="Customer Email" required autocomplete="shipping email" placeholder="sophie@example.com" accesskey="m"></label><br>
+						<label class="required"><span>First name(n):</span><input name="FirstName" required autocomplete="given-name" accesskey="n"></label><br>
+						<label class="required"><span>Last name(l):</span><input name="LastName" required autocomplete="family-name" accesskey="l"></label><br>
+				</div>
+			
+				<div>
+					<h2>Geographic information</h2>
+						<label class="required"><span>State(s):</span><input type="text" name="state" pattern="[a-zA-Z]{2}" required placeholder="Two characters" accesskey="s" autocomplete="on"></label><br>
+						<label class="required"><span>Zip code(z)</span><input type="text" placeholder="Zip Code" title="Please enter a Zip Code" pattern="^\s*?\d{5}(?:[-\s]\d{4})?\s*?$" required accesskey="z" autocomplete="postal-code"></label>
+
+				</div>
+
+				<div class="left">
+					 <h2>How did you hear about us?</h2>
+						<label><span>Web Search:</span><input type="checkbox" name="web search" value="web search"></label><br>
+						<label><span>Facebook:</span><input type="checkbox" name="facebook" value="facebook"></label><br>
+						<label><span>Twitter:</span><input type="checkbox" name="twitter" value="twitter"></label><br>
+						<label><span>Other:</span><input type="checkbox" name="other" value="other"></label><br>
+				</div>
+
+				<div class="right">
+					<h2>Keep informed!</h2>
+						<label><input type="radio" name="contact" value="contact" required> Contact Me</label><br>
+						<label><input type="radio" name="contact" value="no contact" required> No Contact</label><br>
+				</div>
+
+				<div class="msg">
+					<h2>Message</h2>
+						<textarea name="message" maxlength="2000"></textarea>
+				</div>
+					
+				<div class="mx-0 mx-sm-auto">
+				  <div class="text-center">
+					<p>
+					  <strong>How likely is it that you would recommend this website to a friend?</strong>
+					</p>
+				  </div>
+				  <div class="btn-toolbar justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
+					<div class="btn-group me-2" role="group" aria-label="First group">
+					  <button type="button" class="btn btn-light">0</button>
+					  <button type="button" class="btn btn-light">1</button>
+					  <button type="button" class="btn btn-light">2</button>
+					  <button type="button" class="btn btn-light">3</button>
+					  <button type="button" class="btn btn-light">4</button>
+					  <button type="button" class="btn btn-light">5</button>
+					  <button type="button" class="btn btn-light">6</button>
+					  <button type="button" class="btn btn-light">7</button>
+					  <button type="button" class="btn btn-light">8</button>
+					  <button type="button" class="btn btn-light">9</button>
+					  <button type="button" class="btn btn-light">10</button>
+					</div>
+				  </div>
+				</div>
+				
+				<br>
+				<br>
+				<br>
+				
+				<div class="mx-0 w-100">
+				  <div class="text-center">
+					<p>
+					  <strong>How was your experience with this website?</strong>
+					</p>
+				  </div>
+				  <label for="customRange3" class="bad">Bad</label>
+				  <div class="range">
+					<input type="range" class="form-range" min="0" max="6" step="1" id="customRange3">
+				  </div>
+				  <label for="customRange3" class="excellent float-end">Excellent</label>
+				  
+				</div>
+				<br>
+				<h2>Thank you for taking our survey!</h2>
+				
+				<div class="buttons">
+					<button>Submit</button>
+					<button>Reset</button>
+				</div>
+				
+				<div class="end"> Required fields</div>
+			</form>
+			
+		</section>
+		
+		<aside class="asidetwo">
+			<h2>Big Cities of Karakalpakstan</h2>
+			<div id="nav_list">
+				<ul>
+					<li id="nukus"><h3><a href="#">NUKUS</a></h3></li>
+					<li id="muynak"><h3><a href="#">MUYNAK</a></h3></li>
+					<li id="kun"><h3><a href="#">KUNGIROT</a></h3></li>
+					<li id="kho"><h3><a href="#">KHOJAYLI</a></h3></li>
+				</ul>
+			</div>
+		</aside>
+		
+	</main>
+	
+	<footer>
+		<p>&copy; Nodira Kazakova, 2022</p>
+	</footer>
+</body>
+</html>
